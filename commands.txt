@@ -1,0 +1,3 @@
+ kubectl apply --dry-run -k github.com/stefanprodan/podinfo//kustomize -o yaml > podinfo.yaml
+
+ kubectl port-forward deploy/podinfo 9898:9898
